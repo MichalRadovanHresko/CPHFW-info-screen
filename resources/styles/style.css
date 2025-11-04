@@ -3,13 +3,28 @@ body {
 }
 .grid-box {
   display: grid;
-  grid: 221px / 605px repeat(2, 297px);
+  grid-template-columns: 605px 297px 297px;
+  grid-template-rows: 221px 367px 97px 241px;
   margin: 100px 120px;
 }
 .grid-box div {
   background-color: #f1f1f1;
   border: 1px solid black;
+  grid-template-areas:
+    "logo   tall   right"
+    "content tall   right"
+    "content small  right";
   padding: 10px;
   font-size: 30px;
   text-align: center;
 }
+<<<<<<< HEAD
+
+.header {
+  background-color: #202020;
+  font: 
+  font-size: 48px;
+  font-weight: bold;
+}
+=======
+>>>>>>> c4b0ac9a2c8c47bf059a36d3ec6c908315664720
