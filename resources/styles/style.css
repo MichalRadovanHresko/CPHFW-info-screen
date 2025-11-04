@@ -3,12 +3,16 @@ body {
 }
 .grid-box {
   display: grid;
-  grid: 221px / 605px repeat(2, 297px);
+  grid: 221px 601px / 605px repeat(2, 297px);
   margin: 100px 120px;
 }
 .grid-box div {
   background-color: #f1f1f1;
   border: 1px solid black;
+  grid-template-areas:
+    "logo   tall   right"
+    "content tall   right"
+    "content small  right";
   padding: 10px;
   font-size: 30px;
   text-align: center;
