@@ -3,7 +3,8 @@ body {
 }
 .grid-box {
   display: grid;
-  grid: 221px 601px / 605px repeat(2, 297px);
+  grid-template-columns: 605px 297px 297px;
+  grid-template-rows: 221px 367px 97px 241px;
   margin: 100px 120px;
 }
 .grid-box div {
