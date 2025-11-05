@@ -1,31 +1,40 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap');
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: #f5f5f5;
+  background-color: white;
   color: #202020;
   line-height: 1.5;
   font-size: 12px;
 }
 
-main {
-  max-width: 1400px;
-  padding: 20px;
+header {
+  padding-left: 40px;
+  background-color: #202020;
+  margin-bottom: 40px;
 }
 
-/* ——— DESIGNER CARD LAYOUT ——— */
-.designer-card {
+header h1 {
+  font-size: 48px;
+  color: white;
+}
+
+main {
+  max-width: 1400px;
+}
+
+/* DESIGNER CARD LAYOUT */
+.designer-card-red {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr 0.5fr; /* left | middle | runway | qr */
-  gap: 20px;
-  background-color: #fff;
-  padding: 20px;
+  grid-template-columns: 1fr 1.5fr 1fr 0.5fr; /* keeps your original proportions */
+  column-gap: 40px; /* spacing between columns */
+  background-color: white;
+  padding: 40px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   align-items: start;
   position: relative;
@@ -33,40 +42,44 @@ main {
   z-index: 0;
 }
 
-/* ——— LEFT COLUMN ——— */
-.designer-left {
+/* FIRST COLUMN */
+.first-column {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
+  justify-content: space-between;
   overflow: visible;
+  border: 1px solid red;
+  max-width: 231px;
 }
 
-.designer-name {
-  font-size: 20px;
+.first-column h2 {
+  grid-column: 1 / 3; /* makes it visually span across column 1 and 2 */
+  width: 250%;
+  font-size: 24px;
   font-weight: lighter;
-  color: #202020;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
+ }
 
-.portrait {
-  width: 200px;
-  height: 200px;
+.designer-portrait {
+  width: 231px;
+  height: 231px;
   object-fit: cover;
+  object-position: 0% 30%;
 }
 
 .designer-logo {
-  width: 150px;
+  max-width: 200px;
   height: auto;
-  margin-top: 0.5rem;
 }
 
-/* ——— MIDDLE COLUMN ——— */
-.designer-info {
+/* SECOND COLUMN */
+.second-column {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 40px;
+  grid-column: 2 / 3;
+  margin-top: 50px; /* pushes the content of the second column down */
+  border: 1px solid green;
 }
 
 .designer-statement {
@@ -79,17 +92,16 @@ main {
 
 .designer-statement span {
   display: block;
-  text-align: right;
-  margin-top: 0.5rem;
-  font-style: lighter;
+  text-align: center;
+  font-style: normal;
+  font-weight: lighter;
   color: #202020;
 }
 
 .runway-info {
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 16px;
   color: #202020;
-  letter-spacing: 0.3px;
 }
 
 .designer-bio {
@@ -97,35 +109,30 @@ main {
   font-size: 12px;
 }
 
-/* ——— RUNWAY IMAGE ——— */
-.runway-section {
+/* THIRD COLUMN */
+.third-column {
   display: flex;
   justify-content: center;
+  border: 1px solid orange;
 }
 
 .runway-image {
-  width: 250px;
-  height: 389px;
+  width: 363px;
+  height: 419px;
 }
 
 .runway-image:hover {
   transform: scale(1.02);
 }
 
-/* ——— QR CODES ——— */
-.designer-gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2rem;
-}
-
-.designer-links {
+/* FOURTH COLUMN */
+.fourth-column {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: space-between;
+  border: 1px solid blue;
 }
 
 .qr-item {
@@ -141,45 +148,44 @@ main {
 }
 
 .qr-item img {
-  width: 93px;
-  height: 93px;
-  transition: opacity 0.3s ease;
+  width: 50px;
+  height: 50px;
 }
 
-/* ——— RED TRIANGLE DECORATION (optional aesthetic) ——— */
-.designer-card::before,
-.designer-card::after {
+/* RED TRIANGLE DECORATION */
+.designer-card-red::before,
+.designer-card-red::after {
   content: "";
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background-color: #B70101;
   clip-path: polygon(0 0, 100% 0, 0 100%);
   z-index: -1;
 }
 
-.designer-card::before {
+.designer-card-red::before {
   top: 0;
   left: 0;
 }
 
-.designer-card::after {
+.designer-card-red::after {
   bottom: 0;
   right: 0;
   transform: rotate(180deg);
 }
 
-/* ——— RESPONSIVE ADJUSTMENTS ——— */
+/* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 900px) {
   .designer-card {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
-  .designer-left, 
-  .designer-middle,
-  .runway-section,
-  .designer-right {
+  .first-column, 
+  .second-column,
+  .third-column,
+  .fourth-column {
     align-items: center;
     text-align: center;
   }
