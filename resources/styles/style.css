@@ -2,6 +2,8 @@ body {
     margin: 0 auto;
     font-family: "Roboto Condensed";
 }
+
+/* ========== GRID BOX ========== */
 .grid-box {
   display: grid;
   grid-template-columns: 605px repeat(2, 297px);
@@ -17,6 +19,7 @@ body {
   object-fit: cover;
 }
 
+/* ========== GRID AREAS ========== */
 .div1 { grid-area: 1 / 1 / 2 / 2; }
 .div2 { 
   grid-area: 2 / 1 / 4 / 2;
@@ -31,6 +34,7 @@ body {
 .div6 { grid-area: 1 / 3 / 3 / 4; }
 .div7 { grid-area: 3 / 3 / 5 / 4; }
 
+/* ========== BUTTON ========== */
 .div2-button {
   display: inline-flex;
   padding: 0 93px 0 0;
@@ -62,36 +66,55 @@ body {
   font-weight: 700;
   line-height: 50px;
 }
+
 .more-info {
   text-decoration: none;
 }
+
+/* ========== PANELS ========== */
 .left-panel {
-  background-color: black;
   width: 1118px;
   height: 281px;
-}
-.left-panel img { 
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* shared panel properties to avoid duplication */
-main .left-panel,
-main .right-panel {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-  padding-left: 72px;
-  color: #FFF;
-  font-size: 64px;
-  font-weight: 700;
 }
 
 .right-panel {
   text-align: left;
   width: 1162px;
-  height: 263px;
   background-color: #B70101;
   margin-left: auto;
   margin-right: 0;
+}
+
+/* ========== SHARED PANEL PROPERTIES ========== */
+main .left-panel,
+main .right-panel {
+  display: flex;
+  align-items: center;
+  height: 274px;
+  margin-top: 40px;
+  padding-left: 72px;
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 700;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+
+/* ========== PANEL BACKGROUND IMAGES ========== */
+#first-panel {
+  background-image: url('../images/background-image1.png');
+}
+#second-panel {
+  background-image: url('../images/background-image2.png');
+}
+#last-panel {
+  background-image: url('../images/background-image3.png');
+}
+
+/* ========== LINKS INSIDE PANELS ========== */
+main .left-panel a,
+main .right-panel a {
+  text-decoration: none;
+  color: inherit;
 }
