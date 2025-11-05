@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    font-family: "Roboto Condensed";
 }
 .grid-box {
   display: grid;
@@ -45,7 +46,6 @@ body {
 
 .div2-button .button-text {
   color: #000;
-  font-family: "Roboto Condensed", sans-serif;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -66,24 +66,32 @@ body {
   text-decoration: none;
 }
 .left-panel {
-  background-color: aliceblue;
+  background-color: black;
   width: 1118px;
   height: 281px;
-  margin-top: 66px;
-  
 }
 .left-panel img { 
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url("resources/images/background-image-1.png"), url("resources/images/background-image-2.png");
 }
-.right-panel {
+/* shared panel properties to avoid duplication */
+main .left-panel,
+main .right-panel {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+  padding-left: 72px;
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.right-panel {
+  text-align: left;
   width: 1162px;
   height: 263px;
   background-color: #B70101;
   margin-left: auto;
-  margin-top: 54px;
+  margin-right: 0;
 }
