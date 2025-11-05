@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap');
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #f5f5f5;
+  color: #202020;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+main {
+  max-width: 1400px;
+  padding: 20px;
+}
+
+/* ——— DESIGNER CARD LAYOUT ——— */
+.designer-card {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 0.5fr; /* left | middle | runway | qr */
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* ——— LEFT COLUMN ——— */
+.designer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  overflow: visible;
+}
+
+.designer-name {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.designer-logo {
+  width: 150px;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+/* ——— MIDDLE COLUMN ——— */
+.designer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.designer-statement {
+  font-style: italic;
+  font-weight: lighter;
+  color: #202020;
+  text-align: center;
+  font-size: 12px;
+}
+
+.designer-statement span {
+  display: block;
+  text-align: right;
+  margin-top: 0.5rem;
+  font-style: lighter;
+  color: #202020;
+}
+
+.runway-info {
+  font-weight: lighter;
+  font-size: 20px;
+  color: #202020;
+  letter-spacing: 0.3px;
+}
+
+.designer-bio {
+  color: #202020;
+  font-size: 12px;
+}
+
+/* ——— RUNWAY IMAGE ——— */
+.runway-section {
+  display: flex;
+  justify-content: center;
+}
+
+.runway-image {
+  width: 250px;
+  height: 389px;
+}
+
+.runway-image:hover {
+  transform: scale(1.02);
+}
+
+/* ——— QR CODES ——— */
+.designer-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.designer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.qr-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.qr-item p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.qr-item img {
+  width: 93px;
+  height: 93px;
+  transition: opacity 0.3s ease;
+}
+
+/* ——— RED TRIANGLE DECORATION (optional aesthetic) ——— */
+.designer-card::before,
+.designer-card::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #B70101;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: -1;
+}
+
+.designer-card::before {
+  top: 0;
+  left: 0;
+}
+
+.designer-card::after {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+/* ——— RESPONSIVE ADJUSTMENTS ——— */
+@media (max-width: 900px) {
+  .designer-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .designer-left, 
+  .designer-middle,
+  .runway-section,
+  .designer-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .runway-image {
+    width: 80%;
+    height: auto;
+  }
+}
