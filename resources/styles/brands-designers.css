@@ -1,0 +1,76 @@
+body {
+    margin: 0 auto;
+    font-family: "Roboto Condensed";
+    color: white;
+    font-size: 28px;
+}
+
+header {  
+    padding-left: 40px; 
+    padding-right: 40px; 
+    background-color: #202020; 
+    margin-bottom: 40px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+header h1 { 
+  font-size: 48px; 
+  color: white; 
+} 
+
+h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.topic-container {
+    margin: 40px;
+    gap: 40px;
+}
+
+.talent-panel {
+    background-color: #B70101;
+    padding: 40px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center; /* centers the text block vertically next to SVG */
+    justify-content: left;
+    gap: 20px;
+    width: 50%;
+}
+
+.talent-panel p {
+    margin: 0;
+    margin-top: 15px;
+    line-height: 0.5;
+}
+
+.brands-panel {
+    background-color: #A6BFD9;
+    padding: 40px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center; /* centers the text block vertically next to SVG */
+    justify-content: left;
+    gap: 20px;
+    width: 50%;
+}
+
+.brands-panel p {
+    margin: 0;
+    margin-top: 15px;
+    line-height: 0.5;
+}
+
+footer {
+    background-color: #202020;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
