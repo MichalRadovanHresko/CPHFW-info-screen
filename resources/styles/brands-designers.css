@@ -3,6 +3,7 @@ body {
     font-family: "Roboto Condensed";
     color: white;
     font-size: 28px;
+    max-width: 1440px;
 }
 
 header {  
@@ -28,18 +29,24 @@ h2 {
 
 .topic-container {
     margin: 40px;
-    gap: 40px;
+    display: flex;
+    align-items: stretch; /* makes flex children equal height */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+    
+
+.talent-panel,
+.brands-panel {
+    flex: 1;               /* equal width */
+    display: flex;         /* enables SVG + text alignment */
+    align-items: flex-end;   /* vertically centers inside each panel */
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 40px;
 }
 
 .talent-panel {
     background-color: #B70101;
-    padding: 40px;
-    padding-top: 100px;
-    display: flex;
-    align-items: center; /* centers the text block vertically next to SVG */
-    justify-content: left;
-    gap: 20px;
-    width: 50%;
 }
 
 .talent-panel p {
@@ -50,19 +57,18 @@ h2 {
 
 .brands-panel {
     background-color: #A6BFD9;
-    padding: 40px;
-    padding-top: 100px;
-    display: flex;
-    align-items: center; /* centers the text block vertically next to SVG */
-    justify-content: left;
-    gap: 20px;
-    width: 50%;
 }
 
 .brands-panel p {
     margin: 0;
     margin-top: 15px;
     line-height: 0.5;
+}
+
+
+.banner {
+    max-width: 680px;
+    object-fit: cover;
 }
 
 footer {
@@ -72,5 +78,10 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+.cphfw-banner {
+    max-height: 80px;
 }
