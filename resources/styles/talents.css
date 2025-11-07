@@ -1,0 +1,268 @@
+* { 
+  margin: 0; padding: 0; 
+} 
+
+body { 
+  font-family: "Roboto Condensed", sans-serif; 
+  max-width: 1440px; 
+  background-color: white; 
+  color: #202020; 
+  line-height: 1.5; 
+  font-size: 14px; 
+} 
+
+header { 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  padding-left: 40px; 
+  padding-right: 40px; 
+  background-color: #202020; 
+  margin-bottom: 40px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+} 
+
+.menu { 
+  width: 40px; 
+  height: 40px; 
+  object-fit: cover; 
+} 
+
+header h1 { 
+  font-size: 48px; 
+  color: white; 
+} 
+
+/* DESIGNER CARD RED */ 
+.designer-card-red { 
+  display: flex; 
+  flex-direction: row; 
+  gap: 40px; 
+  position: relative; /* for absolute headline */ 
+  height: 410px; 
+  background-color: white; 
+  padding: 40px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
+  z-index: 0; 
+} 
+
+/* DESIGNER CARD BLUE */ 
+  .designer-card-blue { 
+    display: flex; 
+    flex-direction: row; 
+    gap: 40px; 
+    position: relative; /* for absolute headline */ 
+    height: 410px; 
+    background-color: white; 
+    padding: 40px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
+    z-index: 0; 
+  } 
+  
+  /* FIRST COLUMN */ 
+  .first-column { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: relative; /* for h2 positioning */ 
+    padding-top: 40px; /* same as headline top offset */ 
+  } 
+  
+  .first-column h2 { 
+    position: absolute; /* break column spacing */ 
+    top: 0; 
+    left: 0; 
+    font-size: 24px; 
+    line-height: 1; 
+    font-weight: normal; 
+    color: #202020; 
+    width: 600px; /* adjust, so the heading extends into column 2 */ 
+  } 
+  
+  .designer-portrait { 
+    position: relative; 
+    width: 231px; 
+    height: 231px; 
+    object-fit: cover; 
+    margin-top: 10px; 
+  } 
+  
+  .bon-portrait { 
+    object-position: 0% 30%; 
+  } 
+  
+  .ket-portrait { 
+    object-position: 0% 10%; 
+  } 
+  
+  .designer-logo { 
+    max-width: 200px; 
+    max-height: 100px; 
+  } 
+  
+  /* SECOND COLUMN */ 
+  .second-column { 
+    display: flex; 
+    flex-direction: column; 
+    padding-top: 50px; /* push content down to match portrait in column 1 */ 
+    justify-content: space-between; 
+  } 
+  
+  .designer-statement { 
+    font-weight: normal; 
+    font-style: italic; 
+    color: #202020; 
+    text-align: center; 
+    font-size: 14px; 
+  } 
+  
+  .designer-statement span { 
+    display: block; 
+    font-weight: lighter; 
+    text-align: center; 
+    font-size: 14px; 
+    line-height: 2; 
+    color: #202020; 
+  } 
+  
+  .runway-info { 
+    font-size: 24px; 
+    font-weight: lighter; 
+    color: #202020; 
+  } 
+  
+  .designer-bio { 
+    color: #202020; 
+    font-size: 14px; 
+    font-weight: normal; 
+  } 
+  
+  /* THIRD COLUMN */ 
+  .third-column .runway-image { 
+    width: 363px; 
+    height: 410px; 
+    object-fit: cover; 
+  } 
+  
+  .runway-bon { 
+    object-position: 0% 20%; 
+  } 
+  
+  .runway-asm { 
+    object-position: top; 
+  } 
+  
+  /* FOURTH COLUMN */ 
+  .fourth-column { 
+    display: flex; 
+    height: 100%; 
+    flex-direction: column; 
+    justify-content: space-between; 
+  } 
+  
+  .qr-item { 
+    display: flex; 
+    flex-direction: column; 
+  } 
+  
+  .qr-item p { 
+    font-size: 14px; 
+    text-align: left; 
+  } 
+  
+  .qr-item img { 
+    width: 80px; 
+    height: 80px; 
+  } 
+  
+  /* RED TRIANGLE DECORATION */ 
+  .designer-card-red::before, .designer-card-red::after { 
+    content: ""; 
+    position: absolute; 
+    width: 400px; 
+    height: 400px; 
+    background-color: #B70101; 
+    clip-path: polygon(0 0, 100% 0, 0 100%); 
+    z-index: -1; 
+  } 
+  
+  .designer-card-red::before { 
+    top: 0; 
+    left: 0; 
+  } 
+  
+  .designer-card-red::after { 
+    bottom: 0; 
+    right: 0; 
+    transform: rotate(180deg); 
+  } 
+  
+  /* BLUE TRIANGLE DECORATION */ 
+  .designer-card-blue::before, .designer-card-blue::after { 
+    content: ""; 
+    position: absolute; 
+    width: 400px; 
+    height: 400px; 
+    background-color: #A6BFD9; 
+    clip-path: polygon(0 0, 100% 0, 0 100%); 
+    z-index: -1; 
+  } 
+  
+  .designer-card-blue::before { 
+    top: 0; 
+    left: 0; 
+  } 
+  
+  .designer-card-blue::after { 
+    bottom: 0; 
+    right: 0; 
+    transform: rotate(180deg); 
+  }
+
+  footer {
+    background-color: black;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+@media (max-width: 768px) {
+  .designer-card-red,
+  .designer-card-blue {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+ .first-column h2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+ }
+
+ .designer-portrait {
+  margin-top: 20px;
+ }
+
+ .fourth-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ }
+}
+
+.designer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

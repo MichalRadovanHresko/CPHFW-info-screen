@@ -1,0 +1,87 @@
+body {
+    margin: 0 auto;
+    font-family: "Roboto Condensed";
+    color: white;
+    font-size: 28px;
+    max-width: 1440px;
+}
+
+header {  
+    padding-left: 40px; 
+    padding-right: 40px; 
+    background-color: #202020; 
+    margin-bottom: 40px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+header h1 { 
+  font-size: 48px; 
+  color: white; 
+} 
+
+h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.topic-container {
+    margin: 40px;
+    display: flex;
+    align-items: stretch; /* makes flex children equal height */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+    
+
+.talent-panel,
+.brands-panel {
+    flex: 1;               /* equal width */
+    display: flex;         /* enables SVG + text alignment */
+    align-items: flex-end;   /* vertically centers inside each panel */
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 40px;
+}
+
+.talent-panel {
+    background-color: #B70101;
+}
+
+.talent-panel p {
+    margin: 0;
+    margin-top: 15px;
+    line-height: 0.5;
+}
+
+.brands-panel {
+    background-color: #A6BFD9;
+}
+
+.brands-panel p {
+    margin: 0;
+    margin-top: 15px;
+    line-height: 0.5;
+}
+
+
+.banner {
+    max-width: 680px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #202020;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cphfw-banner {
+    max-height: 80px;
+}
