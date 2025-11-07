@@ -1,48 +1,73 @@
+* { 
+  margin: 0; padding: 0; 
+} 
+
 body {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
     font-family: "Roboto Condensed";
     color: white;
     font-size: 28px;
-    max-width: 1440px;
+    line-height: 1.5;
 }
 
-header {  
-    padding-left: 40px; 
-    padding-right: 40px; 
-    background-color: #202020; 
-    margin-bottom: 40px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header { 
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  padding-left: 40px; 
+  padding-right: 40px; 
+  background-color: #202020; 
+  margin-bottom: 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
 } 
 
 header h1 { 
   font-size: 48px; 
-  color: white; 
+  color: white;
 } 
 
 h2 {
     font-size: 48px;
-    line-height: 1.1;
+    line-height: 0.9;
     margin: 0;
 }
 
 .topic-container {
-    margin: 40px;
+    margin: 0 40px 20px 40px;
     display: flex;
+    flex-wrap: wrap; /* allows stacking on small screens */
     align-items: stretch; /* makes flex children equal height */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
-    
-
-.talent-panel,
-.brands-panel {
-    flex: 1;               /* equal width */
+   
+.button {
+    text-decoration: none;
+    color: white;
     display: flex;         /* enables SVG + text alignment */
     align-items: flex-end;   /* vertically centers inside each panel */
     justify-content: flex-start;
     gap: 20px;
+    cursor: pointer;
+}
+.talent-panel,
+.brands-panel {
+    flex: 1;               /* equal width */
+    display: flex;         /* enables SVG + text alignment */
     padding: 40px;
+    align-items: flex-end;
 }
 
 .talent-panel {
@@ -51,7 +76,6 @@ h2 {
 
 .talent-panel p {
     margin: 0;
-    margin-top: 15px;
     line-height: 0.5;
 }
 
@@ -61,27 +85,87 @@ h2 {
 
 .brands-panel p {
     margin: 0;
-    margin-top: 15px;
     line-height: 0.5;
 }
 
-
 .banner {
-    max-width: 680px;
+    width: 50%;
     object-fit: cover;
 }
 
-footer {
+  footer { 
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
     background-color: #202020;
-    padding-top: 20px;
-    padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-.cphfw-banner {
-    max-height: 80px;
+.back-button {
+    color: white;
+}
+
+.cphfw-footer {
+    max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 0;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .topic-container {
+    flex-direction: column; /* stack panels */
+    margin: 20px 20px 0 20px;
+  }
+
+  .talent-panel,
+  .brands-panel {
+    padding: 20px;
+  }
+
+  .talent-panel p,
+  .brands-panel p {
+    line-height: 1;
+  }
+
+  .banner {
+    width: 100%; /* make images full width */
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .cphfw-footer {
+    max-height: 30px;
+  }
+
+  .back-button svg {
+    width: 36px;
+    height: 36px;
+  }
 }

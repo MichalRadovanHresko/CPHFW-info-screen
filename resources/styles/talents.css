@@ -8,16 +8,17 @@ body {
   background-color: white; 
   color: #202020; 
   line-height: 1.5; 
-  font-size: 14px; 
+  font-size: 28px; 
 } 
 
 header { 
-  padding-top: 20px; 
-  padding-bottom: 20px; 
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
   padding-left: 40px; 
   padding-right: 40px; 
   background-color: #202020; 
-  margin-bottom: 40px; 
+  margin-bottom: 20px; 
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
@@ -221,16 +222,26 @@ header h1 {
     transform: rotate(180deg); 
   }
 
-  footer {
-    background-color: black;
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    justify-content: space-between;
-  }
+footer { 
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #202020;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  color: white;
+}
+
+.cphfw-footer {
+  max-height: 40px;
+}
 
 @media (max-width: 768px) {
   .designer-card-red,
@@ -242,14 +253,38 @@ header h1 {
     gap: 20px;
   }
 
+  header {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
  .first-column h2 {
   top: 0;
   left: 0;
   width: 100%;
  }
 
+ .second-column {
+  padding-top: 0;
+ }
+
  .designer-portrait {
   margin-top: 20px;
+  margin-bottom: 20px;
+ }
+
+ .designer-statement {
+  margin-bottom: 20px;
+ }
+
+ .runway-info {
+  margin-bottom: 20px;
  }
 
  .fourth-column {
@@ -259,10 +294,31 @@ header h1 {
   align-items: center;
   width: 100%;
  }
-}
 
-.designer-container {
+ .designer-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+ }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .cphfw-footer {
+    max-height: 30px;
+  }
+
+  .back-button svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  body {
+    font-size: 20px;
+  }
 }
+
