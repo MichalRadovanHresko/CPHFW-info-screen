@@ -118,3 +118,134 @@ main .right-panel a {
   text-decoration: none;
   color: inherit;
 }
+/* ========== DISCOVER PAGE ========== */
+nav { 
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  padding: 0 40px; 
+  background-color: #202020; 
+  color: white;
+  margin-bottom: 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: 114px;
+}
+article {
+  margin: 0 60px;
+}
+.flex-box {
+  margin: 60px;
+  display: flex;
+  gap: 60px;
+}
+.left-box h1 {
+  color: #B70101;
+  font-family: "Roboto Condensed";
+  font-size: 95px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+  padding: 0 40px 0 90px;
+}
+.left-box p {
+  color: #000;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0 80px 0 137px;
+}
+.left-box {
+  background: #F9F7F8;
+  padding: 0 40px;
+  width: 842px;
+  height: 716px;
+  background-image: url('../images/background-image-discover.png');
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.right-box h1 {
+  color: #B70101;
+  font-family: "Roboto Condensed";
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 40px 65px 0 28px;
+  margin: 0;
+}
+.text {
+  color: #FFF;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 71px 63px 0 54px;
+  margin: 0;
+}
+.brand-game {
+  width: 338px;
+  height: 84px;
+  flex-shrink: 0;
+  background: #FFF;
+  margin: 81px 40px 81px;
+}
+.brand-game p {
+  color: #000;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 34px 15px 29px;
+}
+.right-box {
+  background: #A6BFD9;
+  width: 418px;
+  height: 716px;
+  flex-shrink: 0;
+}
+.qr img {
+  width: 219px;
+  height: 219px;
+  margin: 20px 0 21px;
+}
+.qr p {
+  width: 166px;
+  height: 82px;
+  color: #000;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+.qr {
+  text-align: center;
+}
+footer { 
+  background-color: #202020;
+  padding: 0 40px;
+  height: 74px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  color: white;
+}
+
+.cphfw-footer {
+  max-height: 40px;
+}
