@@ -187,7 +187,7 @@ article {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 71px 63px 0 54px;
+  padding: 50px 63px 0 54px;
   margin: 0;
 }
 .brand-game {
@@ -219,15 +219,14 @@ article {
   margin: 20px 0 21px;
 }
 .qr p {
-  width: 166px;
-  height: 82px;
   color: #000;
   font-family: "Roboto Condensed";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 .qr {
   text-align: center;
@@ -248,4 +247,11 @@ footer {
 
 .cphfw-footer {
   max-height: 40px;
+}
+#footer-logo {
+  width: 38.223px;
+  height: 14.422px;
+  flex-shrink: 0;
+  aspect-ratio: 38.22/14.42;
+  padding: 133px 0 10px 86px;
 }
