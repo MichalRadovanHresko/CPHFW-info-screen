@@ -1,0 +1,317 @@
+.roboto-condensed-body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/*------------Header------------*/
+.header-menu {
+    width: 100%;
+    height: 70px; 
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.header-menu .text-wrapper {
+    font-weight: 700;
+    font-size: 24px; 
+    color: white;
+}
+
+.menu-mobile {
+    width: 30px; 
+    height: 30px;
+    padding: 0;
+}
+
+/*------------Day text------------*/
+.day-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.day-text-theme {
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.day-text-day {
+    font-size: 54px;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.day-text-date {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/*------------Events------------*/
+
+.info-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.info-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000
+}
+
+.red-rectangle {
+    background-color: #b70101;
+    color: white;
+    width: 100%; 
+    padding: 10px;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.red-content {
+    padding-left: 15px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    font-weight: 300;
+}
+
+.white-rectangle {
+    background-color: #fff;
+    width: 15%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.white-rectangle img {
+    width: 64px;
+    height: 64px;
+}
+
+.blue-rectangle {
+    background-color: #A6BFD9;
+    color: white;
+    width: 100%; 
+    padding: 10px;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.vector {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+/*------------Download button------------*/
+.download-button-container {
+    margin: 2rem 0;
+}
+
+.download {
+    width: 200px; 
+    height: 120px;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.download svg {
+    width: 85px; 
+    height: 85px;
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px; 
+    line-height: 1.1;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.feeling {
+    font-weight: 300;
+    font-size: 18px; 
+}
+
+.bored {
+    font-weight: 700;
+    font-size: 46px; 
+}
+
+/*------------Footer------------*/
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: auto;
+}
+
+.footer-bg {
+    background-image: url("../images/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 150px; 
+}
+
+.back-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.cphfw-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: auto;
+}
+
+/*------------Responsive: min-width 768px------------*/
+@media (min-width: 768px) {
+
+    .header-menu {
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    .header-menu .text-wrapper {
+        font-size: 28px;
+    }
+
+    .menu-mobile {
+        width: 40px;
+        height: 40px;
+    }
+
+    .day-text {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .day-text-theme {
+        font-size: 20px;
+    }
+
+    .day-text-day {
+        font-size: 120px;
+    }
+
+    .day-text-date {
+        font-size: 24px;
+    }
+
+    .info-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .red-rectangle,
+    .blue-rectangle {
+        width: 95%;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .white-rectangle {
+        width: 20%;
+        padding: 15px;
+    }
+
+    .white-rectangle img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .vector {
+        gap: 30px;
+    }
+
+    .download {
+        width: 250px;
+        height: 140px;
+    }
+
+    .download svg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-text {
+        font-size: 22px;
+    }
+
+    .feeling {
+        font-size: 20px;
+    }
+
+    .bored {
+        font-size: 52px;
+    }
+
+    .footer-bg {
+        height: 200px;
+    }
+
+    .back-arrow {
+        width: 35px;
+    }
+
+    .cphfw-logo {
+        width: 60px;
+    }
+}
