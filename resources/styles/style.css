@@ -197,6 +197,10 @@ article {
   background: #FFF;
   margin: 81px 40px 81px;
 }
+.brand-game a {
+  text-decoration: none;
+  color: #000;
+}
 .brand-game p {
   color: #000;
   text-align: center;
@@ -254,4 +258,55 @@ footer {
   flex-shrink: 0;
   aspect-ratio: 38.22/14.42;
   padding: 133px 0 10px 86px;
+}
+.game {
+  width: 1192px;
+  height: 808px;
+  margin: 68px 260px 20px;
+  background: #F9F7F8;
+}
+.game h1 {
+  color: #B70101;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 79px;
+  margin-bottom: 0;
+}
+.game p {
+  color: #000;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 28px;
+}
+.game img {
+  display: block;
+  width: 624px;
+  height: 162px;
+  margin: 107px auto 168px auto;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.button-box {
+  display: flex;
+  width: 304px;
+  height: 99px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #FFF;
+  color: #000;
+  font-family: "Roboto Condensed";
+  font-size: 50px;
+  font-weight: 700;
 }
