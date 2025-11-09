@@ -1,6 +1,9 @@
 body {
     margin: 0 auto;
     font-family: "Roboto Condensed";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ========== GRID BOX ========== */
@@ -132,13 +135,20 @@ nav {
   align-items: center; 
   height: 114px;
 }
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 article {
   margin: 0 60px;
 }
 .flex-box {
-  margin: 60px;
   display: flex;
+  margin: 60px auto;
   gap: 60px;
+  width: fit-content;
 }
 .left-box h1 {
   color: #B70101;
@@ -262,7 +272,7 @@ footer {
 .game {
   width: 1192px;
   height: 808px;
-  margin: 68px 260px 20px;
+  margin: 68px auto 40px auto;
   background: #F9F7F8;
 }
 .game h1 {
