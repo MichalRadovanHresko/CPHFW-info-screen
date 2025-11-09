@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPHFW Day 1</title>
-    <link rel="stylesheet" href="resources/styles/day1.css">
+    <link rel="stylesheet" href="resources/styles/day.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Instrument+Serif:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="schedule.html" class="header-menu">
-        <div class="text-wrapper">SCHEDULE</div>
-        <img class="menu-mobile" src="resources/images/menu-mobile.svg" alt="menu icon">
-    </a> 
+    <!-- Header menu -->
+    <div class="header-menu">
+        <a href="schedule.html" class="text-wrapper">SCHEDULE</a>
+        <img id="menu-btn" class="menu-btn" src="resources/images/menu-mobile.svg" alt="menu icon">
+    </div>
 
+    <!-- Sidebar menu-->
+     <div id="sidebar-menu" class="sidebar">
+        <div id="close-btn" class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <ul>
+            <li><a href="schedule.html" class="sidebar-link active">SCHEDULE</a></li>
+            <li><a href="talents.html" class="sidebar-link">BRANDS & DESIGNERS</a></li>
+            <li><a href="discover.html" class="sidebar-link">DISCOVER</a></li>
+        </ul>
+     </div>
+     <script src="resources/js/sidebar.js"></script>
+
+    <!-- Day info section -->
     <div class="day-text">
         <p class="day-text-theme">Opening Day: Contemporary Nordic Identity</p>
         <h1 class="day-text-day">DAY 1</h1>
         <p class="day-text-date">27 January 2026</p>
     </div>
 
+    <!-- Schedule info blocks -->
     <div class="info-wrapper">
         <div class="red-rectangle">
             <div class="red-content">
@@ -30,7 +49,7 @@
             </div>    
         </div>
         <div class="white-rectangle">
-            <img class="vector" src="resources/images/map-pin.svg" />
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
         </div>
     </div>
 
@@ -43,7 +62,7 @@
             </div>    
         </div>
         <div class="white-rectangle">
-            <img class="vector" src="resources/images/map-pin.svg" />
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
         </div>
     </div>
 
@@ -56,7 +75,7 @@
             </div>    
         </div>
         <div class="white-rectangle">
-            <img class="vector" src="resources/images/map-pin.svg" />
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
         </div>
     </div>
 
@@ -69,7 +88,7 @@
             </div>    
         </div>
         <div class="white-rectangle">
-            <img class="vector" src="resources/images/map-pin.svg" />
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
         </div>
     </div>
 
@@ -82,7 +101,7 @@
             </div>    
         </div>
         <div class="white-rectangle">
-            <img class="vector" src="resources/images/map-pin.svg" />
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
         </div>
     </div>
 
@@ -95,7 +114,7 @@
             </div>    
         </div>
         <div class="white-rectangle">
-            <img class="vector" src="resources/images/map-pin.svg" />
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
         </div>
     </div>
 
@@ -108,7 +127,7 @@
             </div>    
         </div>
         <div class="white-rectangle">
-            <img class="vector" src="resources/images/map-pin.svg" />
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
         </div>
     </div>
 
@@ -121,10 +140,24 @@
             </div>    
         </div>
         <div class="white-rectangle">
-            <img class="vector" src="resources/images/map-pin.svg" />
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
+        </div>
+    </div>
+
+    <div class="info-wrapper">
+        <div class="red-rectangle">
+            <div class="red-content">
+                <p class="info">18:00</p>
+                <h3 class="designer-name">The Royal Danish Academy | show</h3>
+                <p class="info">The Royal Danish Academy, Design Hall</p>
+            </div>    
+        </div>
+        <div class="white-rectangle">
+            <img class="vector" src="resources/images/map-pin.svg" alt="map icon">
         </div>
     </div>
    
+    <!-- Download button -->
     <div class="download-button-container">
         <button class="download">
             <svg xmlns="http://www.w3.org/2000/svg" width="123" height="123" viewBox="0 0 123 123" fill="none">
@@ -137,9 +170,12 @@
         </button>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
        <div class="footer-bg"></div>
-       <img class="back-arrow" src="resources/images/back-arrow.svg" alt="back arrow">
+       <a href="schedule.html">
+            <img class="back-arrow" src="resources/images/back-arrow.svg" alt="back arrow">
+       </a>
        <img class="cphfw-logo" src="resources/images/cphfw-logo.png" alt="CPHFW logo">
     </footer>
 

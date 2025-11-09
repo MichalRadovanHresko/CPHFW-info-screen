@@ -1,3 +1,4 @@
+// Scrolling contents for schedule page marquees
 const scheduleBrands = {
     "marquee": [
         "Filippa K","Aiayu","Munthe","Baum und Pferdgarten","Bonnetje",

@@ -10,12 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Instrument+Serif:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <!-- Header menu -->
     <div class="header-menu">
         <div class="text-wrapper">SCHEDULE</div>
-        <img class="menu-mobile" src="resources/images/menu-mobile.svg" alt="menu icon">
-     </div>  
-     
+        <img id="menu-btn" class="menu-btn" src="resources/images/menu-mobile.svg" alt="menu icon">
+    </div>
+
+    <!-- Sidebar menu-->
+     <div id="sidebar-menu" class="sidebar">
+        <div id="close-btn" class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <ul>
+            <li><a href="schedule.html" class="sidebar-link active">SCHEDULE</a></li>
+            <li><a href="talents.html" class="sidebar-link">BRANDS & DESIGNERS</a></li>
+            <li><a href="discover.html" class="sidebar-link">DISCOVER</a></li>
+        </ul>
+     </div>
+     <script src="resources/js/sidebar.js"></script>
+    
+    <!-- Day blocks -->
      <section class="day-block">
 
         <div class="day-top">
@@ -132,8 +149,9 @@
         <div class="marquee" id="marquee-4"></div>
     </div>
 
+    <!-- Feeling bored button -->
     <div class="feeling-bored-container">
-        <button class="feeling-bored">
+        <a href="discover.html" class="feeling-bored">
          <svg xmlns="http://www.w3.org/2000/svg" width="91" height="91" viewBox="0 0 91 91" fill="none">
             <path d="M45.4997 83.4168C66.4405 83.4168 83.4163 66.441 83.4163 45.5002C83.4163 24.5594 66.4405 7.5835 45.4997 7.5835C24.5589 7.5835 7.58301 24.5594 7.58301 45.5002C7.58301 66.441 24.5589 83.4168 45.4997 83.4168Z" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M45.5 60.6668L60.6667 45.5002L45.5 30.3335" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -143,12 +161,15 @@
             <span class="feeling">feeling</span>
             <span class="bored">BORED?</span>
          </span> 
-        </button>
+        </a>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
        <div class="footer-bg"></div>
-       <img class="back-arrow" src="resources/images/back-arrow.svg" alt="back arrow">
+       <a href="main.html">
+            <img class="back-arrow" src="resources/images/back-arrow.svg" alt="back arrow">
+        </a>
        <img class="cphfw-logo" src="resources/images/cphfw-logo.png" alt="CPHFW logo">
     </footer>
 
