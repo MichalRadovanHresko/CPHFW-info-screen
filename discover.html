@@ -13,7 +13,7 @@
     <header>
         <nav>
             <h1>DISCOVER</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <svg id="menu-btn" class="menu-btn" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path d="M29.75 14.1667H4.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M29.75 8.5H4.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M29.75 19.8333H4.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -21,6 +21,21 @@
             </svg>
         </nav>
     </header>
+    
+    <div id="sidebar-menu" class="sidebar">
+        <div id="close-btn" class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M21 7L7 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 7L21 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <ul>
+            <li><a href="schedule.html" class="sidebar-link">SCHEDULE</a></li>
+            <li><a href="brands-designers.html" class="sidebar-link">BRANDS & DESIGNERS</a></li>
+            <li><a href="discover.html" class="sidebar-link active">DISCOVER</a></li>
+        </ul>
+    </div>
+    
     <main>
         <article class="discover">
             <div class="flex-box">
@@ -62,5 +77,7 @@
         </a>
         <img src="resources/images/cphf.png" alt="CPHFW banner" class="cphfw-footer">
     </footer>
+    
+    <script src="resources/js/sidebar.js"></script>
 </body>
 </html>

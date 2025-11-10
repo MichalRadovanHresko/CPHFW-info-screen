@@ -8,7 +8,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
+    min-height: 100vh;
     font-family: "Roboto Condensed";
     color: white;
     font-size: 28px;
@@ -21,23 +21,28 @@ main {
     flex-direction: column;
 }
 
-header { 
+header,
+.header { 
   position: sticky;
   top: 0;
   z-index: 1000; 
-  padding-left: 40px; 
-  padding-right: 40px; 
-  background-color: #202020; 
-  margin-bottom: 20px; 
+  padding: 0 40px; 
+  background-color: #202020;  
   display: flex; 
   justify-content: space-between; 
-  align-items: center; 
+  align-items: center;
+  height: 114px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 } 
 
-header h1 { 
+header h1,
+.header h1 { 
   font-size: 48px; 
   color: white;
-} 
+  margin: 0;
+}
 
 h2 {
     font-size: 48px;
@@ -46,7 +51,7 @@ h2 {
 }
 
 .topic-container {
-    margin: 0 40px 20px 40px;
+    margin: 60px 40px 0 40px;
     display: flex;
     flex-wrap: wrap; /* allows stacking on small screens */
     align-items: stretch; /* makes flex children equal height */
@@ -89,21 +94,21 @@ h2 {
 }
 
 .banner {
-    width: 50%;
+    width: 60%;
     object-fit: cover;
 }
 
-  footer { 
-    position: sticky;
-    bottom: 0;
-    z-index: 1000;
-    background-color: #202020;
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+footer { 
+  background-color: #202020;
+  padding: 0 40px;
+  height: 74px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 60px;
 }
 
 .back-button {
@@ -168,4 +173,61 @@ h2 {
     width: 36px;
     height: 36px;
   }
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    width: 70%;
+    max-width: 400px;
+    height: 100%;
+    background-color: #202020;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: right 0.3s ease;
+    padding: 60px 20px 40px 20px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+}
+
+.sidebar a,
+.sidebar-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.sidebar a.active,
+.sidebar-link.active {
+    color: #B70101;
+    font-weight: bold;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-btn svg {
+    width: 30px;
+    height: 30px;
 }

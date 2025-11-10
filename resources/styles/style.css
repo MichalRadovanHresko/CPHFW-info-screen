@@ -319,4 +319,79 @@ footer {
   font-family: "Roboto Condensed";
   font-size: 40px;
   font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  user-select: none;
+}
+
+.button-box:hover {
+  transform: scale(1.05);
+}
+
+.button-box:active {
+  transform: scale(0.98);
+}
+
+/* ========== SIDEBAR MENU ========== */
+.menu-btn {
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 70%;
+  max-width: 400px;
+  height: 100%;
+  background-color: #202020;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: right 0.3s ease;
+  padding: 60px 20px 40px 20px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a,
+.sidebar-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+.sidebar a.active,
+.sidebar-link.active {
+  color: #B70101;
+  font-weight: bold;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn svg {
+  width: 30px;
+  height: 30px;
 }
