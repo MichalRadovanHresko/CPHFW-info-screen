@@ -1,4 +1,4 @@
-// Scrolling contents for schedule page marquees
+
 const scheduleBrands = {
     "marquee": [
         "Filippa K","Aiayu","Munthe","Baum und Pferdgarten","Bonnetje",
@@ -21,7 +21,6 @@ const scheduleBrands = {
 function createMarquee(id, brands) {
     const marquee = document.getElementById(id);
 
-    // Marquee size doubles container size for smooth scrolling
     function populateMarquee() {
         marquee.innerHTML = ''; //reset content
         let totalWidth = 0;
@@ -34,7 +33,6 @@ function createMarquee(id, brands) {
             totalWidth = marquee.scrollWidth;
         }
 }
-    // total width to animate
     function animateMarquee() {
         const contentWidth = marquee.scrollWidth / 2;
         marquee.style.setProperty('--marquee-translate', `-${contentWidth}px`);
@@ -46,7 +44,6 @@ function createMarquee(id, brands) {
     populateMarquee();
     animateMarquee();
 
-    // Recalculate on window resize
     window.addEventListener('resize', () => {
         populateMarquee();
         animateMarquee();
