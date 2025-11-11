@@ -544,3 +544,44 @@ footer {
     max-height: 30px;
   }
 }
+
+header,
+.header { 
+  position: relative;
+  z-index: 1000; 
+  padding: 0 40px; 
+  background-color: #202020;  
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  height: 114px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+} 
+
+header h1,
+.header h1 { 
+  font-size: 48px; 
+  color: white;
+  margin: 0;
+}
+.main-text {
+  display: flex;
+  margin: 0 auto;
+}
+.main-text span {
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+}
+.qr-text {
+  text-align: center;
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; 
+}
