@@ -35,13 +35,13 @@ a {
 
 .header-menu .text-wrapper {
     font-weight: 700;
-    font-size: 24px; 
+    font-size: 48px; 
     color: white;
 }
 
-.menu-mobile {
-    width: 30px; 
-    height: 30px;
+.menu-btn {
+    width: 34px; 
+    height: 34px;
     padding: 0;
 }
 
@@ -49,27 +49,31 @@ a {
 .sidebar {
     position: fixed;
     top: 0;
-    right: -70%; 
+    right: -100%; 
     width: 70%;
+    max-width: 400px;
     height: 100%;
     background-color: #202020;
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
     color: white;
     transition: right 0.3s ease;
-    padding: 40px 20px;
-    z-index: 999;
+    padding: 60px 20px 40px 20px;
+    z-index: 1000;
+    overflow-y: auto;
 }
 
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .sidebar li {
     margin: 20px 0;
 }
 
-.sidebar a {
+.sidebar a,
+.sidebar-link {
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -77,6 +81,12 @@ a {
     padding: 10px 0;
     border-bottom: 1px solid white;
     width: 100%;
+}
+
+.sidebar a.active,
+.sidebar-link.active {
+    color: #B70101;
+    font-weight: bold;
 }
 
 .sidebar.active {
@@ -265,7 +275,6 @@ a {
     left: 15px;
     width: 30px;
     height: auto;
-    cursor: pointer;
 }
 
 .cphfw-logo {
@@ -280,17 +289,17 @@ a {
 @media (min-width: 768px) {
 
     .header-menu {
-        height: 80px;
-        padding: 0 20px;
+        height: 114px;
+        padding: 0 40px;
     }
 
     .header-menu .text-wrapper {
-        font-size: 28px;
+        font-size: 48px;
     }
 
     .menu-mobile {
-        width: 40px;
-        height: 40px;
+        width: 34px;
+        height: 34px;
     }
 
     .day-text {

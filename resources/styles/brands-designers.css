@@ -23,8 +23,7 @@ main {
 
 header,
 .header { 
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 1000; 
   padding: 0 40px; 
   background-color: #202020;  
@@ -42,6 +41,11 @@ header h1,
   font-size: 48px; 
   color: white;
   margin: 0;
+}
+
+.menu-btn {
+  width: 34px;
+  height: 34px;
 }
 
 h2 {
@@ -65,7 +69,6 @@ h2 {
     align-items: flex-end;   /* vertically centers inside each panel */
     justify-content: flex-start;
     gap: 20px;
-    cursor: pointer;
 }
 .talent-panel,
 .brands-panel {

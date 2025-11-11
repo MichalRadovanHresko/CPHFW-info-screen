@@ -135,6 +135,13 @@ nav {
   align-items: center; 
   height: 114px;
 }
+
+nav h1 {
+  font-size: 48px;
+  color: white;
+  margin: 0;
+}
+
 main {
   flex: 1;
   display: flex;
@@ -319,7 +326,6 @@ footer {
   font-family: "Roboto Condensed";
   font-size: 40px;
   font-weight: 700;
-  cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
   user-select: none;
 }
@@ -334,7 +340,8 @@ footer {
 
 /* ========== SIDEBAR MENU ========== */
 .menu-btn {
-  cursor: pointer;
+  width: 34px;
+  height: 34px;
 }
 
 .sidebar {
@@ -388,7 +395,6 @@ footer {
   position: absolute;
   top: 20px;
   right: 20px;
-  cursor: pointer;
 }
 
 .close-btn svg {

@@ -34,13 +34,13 @@ a {
 
 .header-menu .text-wrapper {
     font-weight: 700;
-    font-size: 24px; 
+    font-size: 48px; 
     color: white;
 }
 
 .menu-btn {
-    width: 30px; 
-    height: 30px;
+    width: 34px; 
+    height: 34px;
     padding: 0;
 }
 
@@ -96,18 +96,12 @@ a {
     position: absolute;
     top: 20px;
     right: 20px;
-    cursor: pointer;
 }
 
 .close-btn svg {
     width: 30px;
     height: 30px;
 }
-
-.menu-btn {
-    cursor: pointer;
-}
-
 /*------------Day Block------------*/
 .day-block {
     margin-top: 0.5rem;
@@ -281,7 +275,6 @@ a {
     left: 10px;
     width: 30px;
     height: auto;
-    cursor: pointer;
 }
 
 .cphfw-logo {
@@ -295,11 +288,11 @@ a {
 /*------------Media Queries Tablet/Desktop------------*/
 @media (min-width: 768px) {
     .header-menu {
-        height: 105px;
-        padding: 0 20px;
+        height: 114px;
+        padding: 0 40px;
     }
     .header-menu .text-wrapper {
-        font-size: 40px;
+        font-size: 48px;
     }
 
      .sidebar {
