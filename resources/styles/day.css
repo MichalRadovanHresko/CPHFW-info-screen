@@ -21,7 +21,7 @@ a {
     color: inherit;
 }
 
-/*------------Header------------*/
+
 .header-menu {
     width: 100%;
     height: 70px; 
@@ -45,7 +45,7 @@ a {
     padding: 0;
 }
 
-/*------------Sidebar Menu------------*/
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -104,7 +104,7 @@ a {
     height: 30px;
 }
 
-/*------------Day text------------*/
+
 .day-text {
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@ a {
     font-weight: 200;
 }
 
-/*------------Events------------*/
+
 
 .info-wrapper {
     display: flex;
@@ -206,7 +206,7 @@ a {
     align-items: center;
 }
 
-/*------------Download button------------*/
+
 .download-button-container {
     margin: 2rem 0;
 }
@@ -251,7 +251,7 @@ a {
     font-size: 46px; 
 }
 
-/*------------Footer------------*/
+
 .footer {
     position: relative;
     width: 100%;
@@ -285,7 +285,7 @@ a {
     height: auto;
 }
 
-/*------------Responsive: min-width 768px------------*/
+
 @media (min-width: 768px) {
 
     .header-menu {
@@ -382,3 +382,4 @@ a {
         margin-bottom: 15px;
     }
 }
+

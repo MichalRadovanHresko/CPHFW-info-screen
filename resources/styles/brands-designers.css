@@ -57,23 +57,23 @@ h2 {
 .topic-container {
     margin: 60px 40px 0 40px;
     display: flex;
-    flex-wrap: wrap; /* allows stacking on small screens */
-    align-items: stretch; /* makes flex children equal height */
+    flex-wrap: wrap; 
+    align-items: stretch; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
    
 .button {
     text-decoration: none;
     color: white;
-    display: flex;         /* enables SVG + text alignment */
-    align-items: flex-end;   /* vertically centers inside each panel */
+    display: flex;         
+    align-items: flex-end;   
     justify-content: flex-start;
     gap: 20px;
 }
 .talent-panel,
 .brands-panel {
-    flex: 1;               /* equal width */
-    display: flex;         /* enables SVG + text alignment */
+    flex: 1;               
+    display: flex;         
     padding: 40px;
     align-items: flex-end;
 }
@@ -135,7 +135,7 @@ footer {
   }
 
   .topic-container {
-    flex-direction: column; /* stack panels */
+    flex-direction: column; 
     margin: 20px 20px 0 20px;
   }
 
@@ -150,7 +150,7 @@ footer {
   }
 
   .banner {
-    width: 100%; /* make images full width */
+    width: 100%; 
   }
 
   h2 {
@@ -234,3 +234,4 @@ footer {
     width: 30px;
     height: 30px;
 }
+

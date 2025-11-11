@@ -35,12 +35,12 @@ header h1 {
   color: white; 
 } 
 
-/* DESIGNER CARD RED */ 
+ 
 .designer-card-red { 
   display: flex; 
   flex-direction: row; 
   gap: 40px; 
-  position: relative; /* for absolute headline */ 
+  position: relative;  
   height: 410px; 
   background-color: white; 
   padding: 40px; 
@@ -48,12 +48,12 @@ header h1 {
   z-index: 0; 
 } 
 
-/* DESIGNER CARD BLUE */ 
+ 
   .designer-card-blue { 
     display: flex; 
     flex-direction: row; 
     gap: 40px; 
-    position: relative; /* for absolute headline */ 
+    position: relative;  
     height: 410px; 
     background-color: white; 
     padding: 40px; 
@@ -61,25 +61,25 @@ header h1 {
     z-index: 0; 
   } 
   
-  /* FIRST COLUMN */ 
+   
   .first-column { 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     justify-content: space-between; 
-    position: relative; /* for h2 positioning */ 
-    padding-top: 40px; /* same as headline top offset */ 
+    position: relative;  
+    padding-top: 40px;  
   } 
   
   .first-column h2 { 
-    position: absolute; /* break column spacing */ 
+    position: absolute;  
     top: 0; 
     left: 0; 
     font-size: 24px; 
     line-height: 1; 
     font-weight: normal; 
     color: #202020; 
-    width: 600px; /* adjust, so the heading extends into column 2 */ 
+    width: 600px;  
   } 
   
   .designer-portrait { 
@@ -103,11 +103,11 @@ header h1 {
     max-height: 100px; 
   } 
   
-  /* SECOND COLUMN */ 
+   
   .second-column { 
     display: flex; 
     flex-direction: column; 
-    padding-top: 50px; /* push content down to match portrait in column 1 */ 
+    padding-top: 50px;  
     justify-content: space-between; 
   } 
   
@@ -140,7 +140,7 @@ header h1 {
     font-weight: normal; 
   } 
   
-  /* THIRD COLUMN */ 
+   
   .third-column .runway-image { 
     width: 363px; 
     height: 410px; 
@@ -155,7 +155,7 @@ header h1 {
     object-position: top; 
   } 
   
-  /* FOURTH COLUMN */ 
+   
   .fourth-column { 
     display: flex; 
     height: 100%; 
@@ -178,7 +178,7 @@ header h1 {
     height: 80px; 
   } 
   
-  /* RED TRIANGLE DECORATION */ 
+   
   .designer-card-red::before, .designer-card-red::after { 
     content: ""; 
     position: absolute; 
@@ -200,7 +200,7 @@ header h1 {
     transform: rotate(180deg); 
   } 
   
-  /* BLUE TRIANGLE DECORATION */ 
+   
   .designer-card-blue::before, .designer-card-blue::after { 
     content: ""; 
     position: absolute; 
@@ -321,4 +321,5 @@ footer {
     font-size: 20px;
   }
 }
+
 

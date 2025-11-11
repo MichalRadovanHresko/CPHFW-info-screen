@@ -21,7 +21,7 @@ a {
     color: inherit;
 }
 
-/*------------Header------------*/
+
 .header-menu {
     width: 100%;
     height: 70px; 
@@ -44,7 +44,7 @@ a {
     padding: 0;
 }
 
-/*------------Sidebar Menu------------*/
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -102,7 +102,7 @@ a {
     width: 30px;
     height: 30px;
 }
-/*------------Day Block------------*/
+
 .day-block {
     margin-top: 0.5rem;
 }
@@ -156,7 +156,7 @@ a {
     height: 90%;
 }
 
-/*------------Scrolling Content------------*/
+
 :root {
     --side-padding: 0.5rem;
     --gap: 2rem; 
@@ -206,7 +206,7 @@ a {
     }
 }
 
-/*------------Feeling Bored Button------------*/
+
 .feeling-bored-container {
     margin: 2rem 0;
 }
@@ -251,7 +251,7 @@ a {
     height: 70px;
 }
 
-/*------------Footer------------*/
+
 .footer {
     position: relative;
     width: 100%;
@@ -285,7 +285,7 @@ a {
     height: auto;
 }
 
-/*------------Media Queries Tablet/Desktop------------*/
+
 @media (min-width: 768px) {
     .header-menu {
         height: 114px;
@@ -296,14 +296,14 @@ a {
     }
 
      .sidebar {
-        width: 30%;           /* sidebar più stretta su desktop */
-        padding: 60px 30px;   /* più spazio interno */
+        width: 30%;           
+        padding: 60px 30px;   
     }
 
     .sidebar a {
-        font-size: 22px;      /* link più grandi */
+        font-size: 22px;      
         padding: 15px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.5); /* meno aggressivo */
+        border-bottom: 1px solid rgba(255,255,255,0.5); 
     }
 
     .sidebar li {
@@ -345,3 +345,4 @@ a {
         height: 150px;
     }
 }
+

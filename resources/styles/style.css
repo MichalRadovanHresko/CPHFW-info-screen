@@ -5,8 +5,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-/* ========== GRID BOX ========== */
 .grid-box {
   display: grid;
   grid-template-columns: 605px repeat(2, 297px);
@@ -21,8 +19,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
-/* ========== GRID AREAS ========== */
 .div1 { grid-area: 1 / 1 / 2 / 2; }
 .div2 { 
   grid-area: 2 / 1 / 4 / 2;
@@ -36,8 +32,6 @@ body {
 .div5 { grid-area: 4 / 2 / 5 / 3; }
 .div6 { grid-area: 1 / 3 / 3 / 4; }
 .div7 { grid-area: 3 / 3 / 5 / 4; }
-
-/* ========== BUTTON ========== */
 .div2-button {
   display: inline-flex;
   padding: 0 93px 0 0;
@@ -45,41 +39,33 @@ body {
   width: 209px;
   height: 73px;
 }
-
 .div2-button svg {
   width: 73px;
   height: 73px;
 }
-
 .div2-button .button-text {
   color: #000;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-
 .div2-button .text-more {
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
 }
-
 .div2-button .text-info {
   font-size: 64px;
   font-weight: 700;
   line-height: 50px;
 }
-
 .more-info {
   text-decoration: none;
 }
-
-/* ========== PANELS ========== */
 .left-panel {
   width: 1118px;
   height: 281px;
 }
-
 .right-panel {
   text-align: left;
   width: 1162px;
@@ -87,8 +73,6 @@ body {
   margin-left: auto;
   margin-right: 0;
 }
-
-/* ========== SHARED PANEL PROPERTIES ========== */
 main .left-panel,
 main .right-panel {
   display: flex;
@@ -103,8 +87,6 @@ main .right-panel {
   background-position: center;
   text-decoration: none;
 }
-
-/* ========== PANEL BACKGROUND IMAGES ========== */
 #first-panel {
   background-image: url('../images/background-image1.png');
 }
@@ -114,14 +96,11 @@ main .right-panel {
 #last-panel {
   background-image: url('../images/background-image3.png');
 }
-
-/* ========== LINKS INSIDE PANELS ========== */
 main .left-panel a,
 main .right-panel a {
   text-decoration: none;
   color: inherit;
 }
-/* ========== DISCOVER PAGE ========== */
 nav { 
   position: sticky;
   top: 0;
@@ -135,13 +114,11 @@ nav {
   align-items: center; 
   height: 114px;
 }
-
 nav h1 {
   font-size: 48px;
   color: white;
   margin: 0;
 }
-
 main {
   flex: 1;
   display: flex;
@@ -261,11 +238,9 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 .back-button {
   color: white;
 }
-
 .cphfw-footer {
   max-height: 40px;
 }
@@ -329,21 +304,16 @@ footer {
   transition: transform 0.2s, background-color 0.3s;
   user-select: none;
 }
-
 .button-box:hover {
   transform: scale(1.05);
 }
-
 .button-box:active {
   transform: scale(0.98);
 }
-
-/* ========== SIDEBAR MENU ========== */
 .menu-btn {
   width: 34px;
   height: 34px;
 }
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -359,17 +329,14 @@ footer {
   z-index: 1000;
   overflow-y: auto;
 }
-
 .sidebar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .sidebar li {
   margin: 20px 0;
 }
-
 .sidebar a,
 .sidebar-link {
   text-decoration: none;
@@ -380,24 +347,195 @@ footer {
   border-bottom: 1px solid white;
   width: 100%;
 }
-
 .sidebar a.active,
 .sidebar-link.active {
   color: #B70101;
   font-weight: bold;
 }
-
 .sidebar.active {
   right: 0;
 }
-
 .close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-
 .close-btn svg {
   width: 30px;
   height: 30px;
+}
+@media (max-width: 1200px) {
+  .flex-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1400px) and (min-width: 769px) {
+  article {
+    margin: 0 40px;
+  }
+  .flex-box {
+    gap: 40px;
+    margin: 50px auto;
+  }
+  .left-box {
+    width: 650px;
+    height: 600px;
+  }
+  .left-box h1 {
+    font-size: 70px;
+    padding: 0 30px 0 60px;
+    margin-bottom: 24px;
+  }
+  .left-box p {
+    font-size: 20px;
+    padding: 0 60px 0 100px;
+  }
+  .right-box {
+    width: 350px;
+    height: 600px;
+  }
+  .right-box h1 {
+    font-size: 50px;
+    padding: 30px 40px 0 20px;
+  }
+  .text {
+    font-size: 20px;
+    padding: 40px 40px 0 40px;
+  }
+  .brand-game {
+    width: 280px;
+    height: 75px;
+    margin: 60px 35px;
+  }
+  .brand-game p {
+    font-size: 22px;
+    padding: 28px 12px;
+  }
+  .qr img {
+    width: 190px;
+    height: 190px;
+  }
+  #footer-logo {
+    padding: 110px 0 10px 60px;
+  }
+  .game {
+    width: 900px;
+    height: auto;
+    margin: 60px auto 40px auto;
+  }
+  .game h1 {
+    font-size: 55px;
+    padding-top: 60px;
+  }
+  .game img {
+    width: 500px;
+    height: auto;
+    margin: 80px auto 120px auto;
+  }
+  .button-box {
+    width: 260px;
+    height: 85px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  article {
+    margin: 0 20px;
+  }
+  .flex-box {
+    flex-direction: column;
+    margin: 40px auto;
+    gap: 30px;
+    width: 100%;
+  }
+  .left-box {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    padding: 20px;
+  }
+  .left-box h1 {
+    font-size: 48px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+  }
+  .left-box p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+  #footer-logo {
+    padding: 80px 0 20px 20px;
+  }
+  .right-box {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+  }
+  .right-box h1 {
+    font-size: 40px;
+    padding: 30px 20px 0 20px;
+  }
+  .text {
+    font-size: 18px;
+    padding: 30px 20px 0 20px;
+  }
+  .brand-game {
+    width: calc(100% - 40px);
+    margin: 40px 20px;
+  }
+  .brand-game p {
+    font-size: 20px;
+    padding: 30px 15px;
+  }
+  .qr img {
+    width: 180px;
+    height: 180px;
+    margin: 15px 0;
+  }
+  .qr p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+  .game {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 40px 20px;
+    padding: 20px;
+  }
+  .game h1 {
+    font-size: 40px;
+    padding-top: 40px;
+  }
+  .game p {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  .game img {
+    width: 100%;
+    height: auto;
+    margin: 60px auto 80px auto;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+  .button-box {
+    width: 100%;
+    height: 80px;
+    font-size: 28px;
+  }
+  footer {
+    padding: 0 20px;
+    height: 60px;
+  }
+  .back-button svg {
+    width: 36px;
+    height: 36px;
+  }
+  .cphfw-footer {
+    max-height: 30px;
+  }
 }
