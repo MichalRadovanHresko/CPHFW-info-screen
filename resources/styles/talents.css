@@ -240,6 +240,11 @@ footer {
   color: white;
 }
 
+.back-button svg {
+  width: 48px;
+  height: 48px;
+}
+
 .cphfw-footer {
   max-height: 40px;
 }
