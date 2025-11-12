@@ -599,8 +599,8 @@ header h1,
 .main-map iframe {
   padding: 75px;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
   border: none;
   position: relative;
   z-index: 1;
@@ -614,4 +614,10 @@ header h1,
   font-weight: 700;
   line-height: normal;
   margin-top: 40px;
+}
+.centered {
+  text-align: center;
+}
+.info {
+  line-height: 50px;
 }
