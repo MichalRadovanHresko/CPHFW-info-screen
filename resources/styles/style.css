@@ -605,3 +605,13 @@ header h1,
   position: relative;
   z-index: 1;
 }
+.error-message {
+  color: #000;
+}
+.error-message h1{ 
+  font-size: 135px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 40px;
+}
