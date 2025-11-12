@@ -666,16 +666,175 @@ header h1,
   margin-left: -100px;
 }
 .brand-card {
+  display: flex;
   height: 101px;
   align-self: stretch;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
   gap: 10px;
+  margin-bottom: 1px;
+  margin-top: 40px;
+  padding: 0 40px;
+  border-bottom: 1px solid #000;
+  position: relative;
+  box-sizing: border-box;
 }
-.brand-card p { 
+
+.brand-card::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  background-color: #B70101;
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: -1;
+}
+
+
+.brand-card.variant-red::after {
+  background-color: #B70101;
+}
+
+.brand-card.variant-blue::after {
+  background-color: #A6BFD9;
+}
+
+.brand-card .brand-logo { 
+  width: 231px;
+  height: 101px;
+  flex-shrink: 0;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.brand-card .brand-name { 
   color: #000;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 0;
+  z-index: 1;
+}
+
+.brand-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.brand-details .brand-separator {
+  color: #FFF;
+}
+
+.brand-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.brand-toggle svg {
+  width: 57px;
+  height: 57px;
+}
+main .brand-card:last-child {
+  margin-bottom: 40px;
+}
+
+/* Filter styles */
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 2px solid #000;
+  gap: 20px;
+}
+
+.filter-letters {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-letter {
+  background: none;
+  border: none;
+  color: #000;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 5px 8px;
+  transition: all 0.2s;
+}
+
+.filter-letter:hover {
+  color: #B70101;
+  font-weight: 700;
+}
+
+.filter-letter.active {
+  color: #B70101;
+  font-weight: 700;
+}
+
+.letter-separator {
+  color: #000;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  user-select: none;
+}
+
+.filter-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #000;
+  padding: 8px 15px;
+  border-radius: 25px;
+  background: #FFF;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  width: 200px;
+  background: transparent;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn svg {
+  width: 20px;
+  height: 20px;
+  color: #000;
 }
