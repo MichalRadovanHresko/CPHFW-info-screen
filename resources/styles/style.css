@@ -621,3 +621,61 @@ header h1,
 .info {
   line-height: 50px;
 }
+
+.background-rectangles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg-rect {
+  position: absolute;
+  flex-shrink: 0;
+}
+
+.bg-rect-1 {
+  width: 1386.279px;
+  height: 1956.32px;
+  transform: rotate(44.391deg);
+  background-color: #A6BFD9;
+  top: -672px;
+  left: -1414px;
+}
+
+.bg-rect-2 {
+  width: 1386.279px;
+  height: 1956.32px;
+  transform: rotate(130.229deg);
+  background-color: #B70101;
+  bottom: -1000px;
+  left: -658px;
+}
+
+.bg-rect-3 {
+  width: 1386.279px;
+  height: 1956.32px;
+  transform: rotate(44.391deg);
+  background-color: #A6BFD9;
+  bottom: -1250px;
+  left: 50%;
+  margin-left: -100px;
+}
+.brand-card {
+  height: 101px;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.brand-card p { 
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
