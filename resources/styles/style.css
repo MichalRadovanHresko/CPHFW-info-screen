@@ -842,3 +842,77 @@ main .brand-card:last-child {
   height: 20px;
   color: #000;
 }
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.error-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 600px;
+  padding: 40px;
+}
+
+.error-content h1 {
+  font-size: 180px;
+  font-weight: 700;
+  color: #B70101;
+  margin: 0;
+  line-height: 1;
+}
+
+.error-subtitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin: 20px 0;
+}
+
+.error-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  margin: 20px 0 40px 0;
+  line-height: 1.5;
+}
+
+.error-button {
+  display: inline-block;
+  padding: 20px 60px;
+  background-color: #A6BFD9;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Roboto Condensed";
+}
+@media (max-width: 768px) {
+  .error-content h1 {
+    font-size: 120px;
+  }
+  
+  .error-subtitle {
+    font-size: 32px;
+  }
+  
+  .error-text {
+    font-size: 18px;
+  }
+  
+  .error-button {
+    padding: 15px 40px;
+    font-size: 20px;
+  }
+  
+  .red-circle,
+  .blue-circle {
+    width: 300px;
+    height: 300px;
+  }
+}
