@@ -909,10 +909,4 @@ main .brand-card:last-child {
     padding: 15px 40px;
     font-size: 20px;
   }
-  
-  .red-circle,
-  .blue-circle {
-    width: 300px;
-    height: 300px;
-  }
 }
