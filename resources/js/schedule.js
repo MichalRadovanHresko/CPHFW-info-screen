@@ -22,7 +22,7 @@ function createMarquee(id, brands) {
     const marquee = document.getElementById(id);
 
     function populateMarquee() {
-        marquee.innerHTML = ''; //reset content
+        marquee.innerHTML = '';
         let totalWidth = 0;
         while (totalWidth < marquee.offsetWidth * 2) {
             brands.forEach(brand => {
@@ -36,7 +36,7 @@ function createMarquee(id, brands) {
     function animateMarquee() {
         const contentWidth = marquee.scrollWidth / 2;
         marquee.style.setProperty('--marquee-translate', `-${contentWidth}px`);
-        const duration = contentWidth / 50; // px/sec
+        const duration = contentWidth / 50;
         marquee.style.animation = `marquee ${duration}s linear infinite`;
         marquee.classList.add('animate');
     }

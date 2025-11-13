@@ -3,27 +3,37 @@ const questions = [
     {
         image: 'resources/images/first-guess.png',
         options: ['Bonnetje', 'Bonnepe', 'Bannipe'],
-        correct: 0 
+        correct: 0,
+        width: null,
+        height: null
     },
     {
         image: 'resources/images/second-guess.png',
         options: ['Caro Editions', 'Barb Editions', 'Aarg Editions'],
-        correct: 0
+        correct: 0,
+        width: '387px',
+        height: '191px'
     },
     {
         image: 'resources/images/third-guess.png',
         options: ['Han Københaven', 'Han Kjøbenhavn', 'Han Keenhav'],
-        correct: 0
+        correct: 1,
+        width: null,
+        height: null
     },
     {
         image: 'resources/images/fourth-guess.png',
         options: ['OmegaSport', 'OceaSport', 'OperaSport'],
-        correct: 0
+        correct: 2,
+        width: '517px',
+        height: '214px'
     },
     {
         image: 'resources/images/fifth-guess.png',
         options: ['TG flora', 'TG Botanical', 'TG Nativa'],
-        correct: 0
+        correct: 1,
+        width: '165px',
+        height: '141px'
     }
 ];
 
@@ -48,6 +58,14 @@ function loadQuestion(questionIndex) {
     const question = questions[questionIndex];
     gameImage.src = question.image;
     
+    if (question.width) {
+        gameImage.style.width = question.width;
+        gameImage.style.height = question.height;
+    } else {
+        gameImage.style.width = '';
+        gameImage.style.height = '';
+    }
+    
     buttonBoxes.forEach((button, index) => {
         button.textContent = question.options[index];
         button.style.backgroundColor = '#FFF';
@@ -65,11 +83,11 @@ function handleAnswer(selectedIndex) {
     });
     
     if (isCorrect) {
-        buttonBoxes[selectedIndex].style.backgroundColor = '#28a745'; // GREEN 
+        buttonBoxes[selectedIndex].style.backgroundColor = '#28a745';
         buttonBoxes[selectedIndex].style.color = '#FFF';
         score++;
     } else {
-        buttonBoxes[selectedIndex].style.backgroundColor = '#dc3545'; // RED
+        buttonBoxes[selectedIndex].style.backgroundColor = '#dc3545';
         buttonBoxes[selectedIndex].style.color = '#FFF';
         buttonBoxes[question.correct].style.backgroundColor = '#28a745';
         buttonBoxes[question.correct].style.color = '#FFF';
@@ -83,7 +101,7 @@ function handleAnswer(selectedIndex) {
         } else {
             showResults();
         }
-    }, 2000);
+    }, 1000);
 }
 
 function showResults() {

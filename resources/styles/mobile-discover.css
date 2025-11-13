@@ -1,0 +1,157 @@
+.mobile-discover {
+    background-color: #A6BFD9;
+}
+
+.mobile-challenge-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.challenge-header {
+    background-color: #A6BFD9;
+    color: #FFF;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.challenge-header h1 {
+    color: #FFF;
+    font-family: "Roboto Condensed";
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.challenge-subtitle {
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.challenge-prize {
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.challenge-section {
+    background-color: #FFF;
+    padding: 30px 20px;
+    margin: 20px 0;
+}
+
+.challenge-section h2 {
+    color: #B70101;
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.section-description {
+    color: #000;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 45px;
+}
+
+.checklist-item input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #FFF;
+    border: 2px solid #000;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.checklist-item input:checked ~ .checkmark {
+    background-color: #B70101;
+    border-color: #B70101;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checklist-item input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checklist-item .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checklist-text {
+    color: #000;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.skyline-footer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.skyline-footer svg {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 769px) {
+    .mobile-discover .mobile-challenge-container {
+        max-width: 500px;
+        margin: 40px auto;
+    }
+    
+    .challenge-header h1 {
+        font-size: 42px;
+    }
+    
+    .challenge-section h2 {
+        font-size: 36px;
+    }
+}
